@@ -1,0 +1,26 @@
+{
+    "name": "survos/stone-contract",
+    "description": "Folio-scoped cemetery evidence and image-coordinate contracts.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.5",
+        "survos/data-contracts": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Survos\\StoneContract\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Survos\\StoneContract\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.0"
+    },
+    "scripts": {
+        "test": "phpunit --bootstrap tests/bootstrap.php tests"
+    }
+}
